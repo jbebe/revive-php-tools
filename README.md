@@ -13,6 +13,10 @@
 * Debian GNU/Linux 0.91 announcement: 1994 January [link](https://www.debian.org/doc/manuals/project-history/ch-releases.en.html)
 * PHP Tools announcement: 1995 June 8, Thursday @ 9:00:00 AM UTC+2 [link](https://groups.google.com/forum/#!msg/comp.infosystems.www.authoring.cgi/PyJ25gZ6z7A/M9FkTUVDfcwJ)
 
+## Prerequisites
+
+ * `sudo apt-get install qemu-system-x86 qemu-utils`
+
 ## Help
 
 * Install Debian 0.91 on QEMU [link](https://blog.quickmediasolutions.com/2016/08/23/running-debian-0-91-in-qemu.html)
