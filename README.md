@@ -20,4 +20,4 @@
 
 ## Commands
 
-* Read doc: `zcat /usr/doc/NET-2-HOWTO.gz | less`
+* Read nework doc: `zcat /usr/doc/NET-2-HOWTO.gz | less`
