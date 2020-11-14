@@ -21,6 +21,7 @@
 
 * Install Debian 0.91 on QEMU [link](https://blog.quickmediasolutions.com/2016/08/23/running-debian-0-91-in-qemu.html)
 * Old Debian distros [link](http://www.oldlinux.org/Linux.old/distributions/debian/)
+* PHP/FI https://www.php.net/manual/phpfi2.php
 
 ## Commands
 
