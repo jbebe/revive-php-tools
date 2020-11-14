@@ -8,7 +8,7 @@
  * not ~/public_html, you need to define this.  Note that this is not the
  * system-wide html root directory, only your personal root directory.
  */
-/* #define ROOTDIR "/usr/somewhere/user_id/public_html" */
+#define ROOTDIR "/usr/local/apache2"
 
 /*
  * HTML_DIR
@@ -26,7 +26,7 @@
  * will be appended to this directory.  By default "/public_html" is
  * appended if HTML_DIR is not defined.
  */
-/* #define HTML_DIR "html" */
+#define HTML_DIR "htdocs"
 
 /*
  * LOGDIR
@@ -35,7 +35,7 @@
  * "logs/".  If you don't want your log files to be placed in
  * ~/public_html/logs then define this:
  */
-#define LOGDIR "logs/"
+#define LOGDIR "/usr/local/apache2/cgi-bin/log"
 
 /*
  * ACCDIR

@@ -766,7 +766,7 @@ int main(int argc, char *argv[]) {
 	int first_time=1;
 
 #if DEBUG
-	fperr=fopen("phpl.err","w");
+	fperr=fopen(LOGDIR "/" "phpl.err","w");
 	fprintf(fperr,"phpl starting\n");
 	fflush(fperr);
 #endif

@@ -64,7 +64,7 @@ int main(int argc, char *argv[]) {
 	setuid(geteuid());
 
 #if DEBUG
-	fperr=fopen("phplview.err","w");
+	fperr=fopen(LOGDIR "/" "phplview.err","w");
 	fprintf(fperr,"phplview starting\n");
 	fflush(fperr);
 #endif

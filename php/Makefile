@@ -16,7 +16,7 @@
 #
 # If you want to disable the <!--!command--> feature add this: -DNOSYSTEM
 
-OPTIONS = -DLOCKF
+OPTIONS = -DLOCKF -DDEBUG
 
 # Generic compiler options
 #CFLAGS	=	-g -O2 -Wall -DDEBUG $(OPTIONS)

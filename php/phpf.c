@@ -35,6 +35,7 @@
 #if LOCKFH
 #include <sys/lockf.h>
 #endif
+#include "config.h"
 #include "html_common.h"
 #include "post.h"
 #include "common.h"
@@ -109,7 +110,7 @@ int main(int argc, char *argv[]) {
 	setuid(geteuid());
 
 #if DEBUG
-	fperr=fopen("phpf.err","w");
+	fperr=fopen(LOGDIR "/" "phpf.err","w");
 	fprintf(fperr,"PHPF Starting\n");
 	fflush(fperr);
 #endif

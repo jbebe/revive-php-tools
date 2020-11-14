@@ -444,7 +444,7 @@ int main(int argc, char *argv[]) {
 	int show=0;
 
 #if DEBUG
-	fperr=fopen("phplmon.err","w");
+	fperr=fopen(LOGDIR "/" "phplmon.err","w");
 	if(!fperr) {
 		puts("Content-type: text/html");
 		puts("");

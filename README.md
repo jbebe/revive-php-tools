@@ -21,8 +21,36 @@
 
 * Install Debian 0.91 on QEMU [link](https://blog.quickmediasolutions.com/2016/08/23/running-debian-0-91-in-qemu.html)
 * Old Debian distros [link](http://www.oldlinux.org/Linux.old/distributions/debian/)
-* PHP/FI https://www.php.net/manual/phpfi2.php
+* PHP/FI 
+    https://www.php.net/manual/phpfi2.php 
+    http://obswww.unige.ch/~simond/Examples/PHP/php.iquest.net/intro.phtml
+    ftp://ftp.lyx.org/pub/sgml-tools/website/HOWTO/PostgreSQL-HOWTO/t11084.html
+
 
 ## Commands
 
 * Read nework doc: `zcat /usr/doc/NET-2-HOWTO.gz | less`
+
+## Early PHP Tools snippet:
+
+```
+<!--include /text/header.html-->
+
+<!--getenv HTTP_USER_AGENT-->
+<!--if substr $exec_result Mozilla-->
+  Hey, you are using Netscape!<p>
+<!--endif-->
+
+<!--sql database select * from table where user='$username'-->
+<!--ifless $numentries 1-->
+  Sorry, that record does not exist<p>
+<!--endif exit-->
+  Welcome <!--$user-->!<p>
+  You have <!--$index:0--> credits left in your account.<p>
+
+<!--include /text/footer.html-->
+```
+
+### Mini SQL support: 
+
+http://moko.ru/doc/msql-manual/api.htm
