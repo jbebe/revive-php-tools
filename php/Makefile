@@ -20,7 +20,7 @@ OPTIONS = -DLOCKF
 
 # Generic compiler options
 #CFLAGS	=	-g -O2 -Wall -DDEBUG $(OPTIONS)
-CFLAGS =	-O2 $(OPTIONS)
+CFLAGS =	-O2 -Wno-unused-result $(OPTIONS)
 CC =	gcc
 # If you don't have gcc, use these instead:
 #CFLAGS =	-g $(OPTIONS) 
@@ -36,7 +36,16 @@ SOURCE =	phpf.c phpl.c phplview.c phplmon.c common.c \
 			subvar.c html_common.h post.h version.h wm.h \
 			Makefile README License
 
-ALL: phpl.cgi phplmon.cgi phplview.cgi phpf.cgi
+ALL: phpl.cgi phplmon.cgi phplview.cgi phpf.cgi clean-obj move-to-dir
+
+move-to-dir:
+	mkdir cgi-bin; mv *.cgi cgi-bin
+
+clean-obj:
+	rm -f *.o
+
+clean: clean-obj
+	rm -rf cgi-bin
 
 phpl.cgi:	phpl.o wm.o common.o post.o subvar.o error.o
 		$(CC) $(CFLAGS) -o phpl.cgi phpl.o wm.o common.o post.o error.o subvar.o
