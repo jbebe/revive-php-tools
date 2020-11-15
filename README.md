@@ -25,8 +25,7 @@
     https://www.php.net/manual/phpfi2.php 
     http://obswww.unige.ch/~simond/Examples/PHP/php.iquest.net/intro.phtml
     ftp://ftp.lyx.org/pub/sgml-tools/website/HOWTO/PostgreSQL-HOWTO/t11084.html
-
-
+* JS 1.0 https://web.archive.org/web/19970122130407/http://planetx.bloomu.edu:80/~mpscho/jsarchive/
 ## Commands
 
 * Read nework doc: `zcat /usr/doc/NET-2-HOWTO.gz | less`
